@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./style.css">
+   <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+
+   <section class="pricing-section">
+      <div class="intro-text">
+         <h1>Simple, traffic-based pricing</h1>
+         <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+
+      <div class="card-pricing">
+         <div class="card-body">
+            <div class="pricing-info">
+               <p class="item-name" id="total-pageviews">100k Pageviews</p>
+               <div class="price">
+                  <h1 class="total-price" id="total-price">$16.00</h1>
+                  <span class="per-month">/ month</span>
+               </div>
+               <input type="range" name="slider" min="0" max="100" value="50" step="25" class="slider" id="slider">
+            </div>
+            <div class="billings">
+               <p class="billing-text">Monthly Billing</p>
+               <div class="toggle-billing" id="toggle-billing"></div>
+               <p class="billing-text yearly-billing">
+                  Yearly Billing
+                  <span class="discount">25% <span class="discount-text">discount</span></span>
+               </p>
+            </div>
+         </div>
+         <div class="card-bottom">
+            <ul class="features">
+               <li>
+                  <p>Unlimited websites</p>
+               </li>
+               <li>
+                  <p>100% data ownership</p>
+               </li>
+               <li>
+                  <p>Email reports</p>
+               </li>
+            </ul>
+            <a href="#" class="btn-trial">Start my trial</a>
+         </div>
+      </div>
+   </section>
+
+   <script src="./script.js"></script>
+</body>
+
+</html>
